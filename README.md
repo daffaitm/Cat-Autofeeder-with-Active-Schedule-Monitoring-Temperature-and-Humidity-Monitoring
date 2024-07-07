@@ -5,10 +5,9 @@
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Components](#components)
-4. [Wiring Diagram](#wiring-diagram)
+4. [Wiring](#wiring)
 5. [Installation](#installation)
 6. [Usage](#usage)
-
 
 ## Introduction
 
@@ -37,9 +36,58 @@ This project aims to create an automatic cat feeder that can monitor the feeding
 - Jumper Wires
 - Breadboard
 
-## Wiring Diagram
+## Wiring
 
-Refer to the `wiring_diagram.png` file in the repository for the complete wiring diagram of the project.
+### Device Interconnection with Microcontroller
+
+#### RTC DS3231 with Arduino Uno
+| RTC DS3231 | Arduino Uno |
+|------------|-------------|
+| SDA        | Pin A4      |
+| SCL        | Pin A5      |
+
+#### PIR Sensor with Arduino Uno
+| PIR Sensor | Arduino Uno |
+|------------|-------------|
+| Out        | Pin 11      |
+
+#### DHT11 with Arduino Uno
+| DHT11 | Arduino Uno |
+|-------|-------------|
+| Out   | Pin 12      |
+
+#### Servo with Arduino Uno
+| Servo | Arduino Uno |
+|-------|-------------|
+| PWM   | Pin 10      |
+
+#### LCD 16x2 I2C with Arduino Uno
+| I2C Module | Arduino Uno |
+|------------|-------------|
+| SDA        | Pin SDA     |
+| SCL        | Pin SCL     |
+
+#### Keypad 4x4 with Arduino Uno
+| Keypad 4x4 | Arduino Uno |
+|------------|-------------|
+| Pin 1      | Pin 2       |
+| Pin 2      | Pin 3       |
+| Pin 3      | Pin 4       |
+| Pin 4      | Pin 5       |
+| Pin 5      | Pin 6       |
+| Pin 6      | Pin 7       |
+| Pin 7      | Pin 8       |
+| Pin 8      | Pin 9       |
+
+#### Push Button with Arduino Uno
+| Push Button | Arduino Uno |
+|-------------|-------------|
+| Out         | Pin A2      |
+
+#### Buzzer with Arduino Uno
+| Buzzer   | Arduino Uno |
+|----------|-------------|
+| Positive | Pin 13      |
 
 ## Installation
 
@@ -60,7 +108,7 @@ Refer to the `wiring_diagram.png` file in the repository for the complete wiring
    You can install these libraries via the Arduino Library Manager. Go to **Sketch** > **Include Library** > **Manage Libraries...** and search for each library name to install.
 
 4. **Wiring Setup**
-   Connect the components as per the wiring diagram provided in the repository (`wiring_diagram.png`).
+   Connect the components as per the wiring diagram provided in the repository.
 
 5. **Power Up the Device**
    Once the code is uploaded and the wiring is set up, power up the Arduino Uno using a USB cable or an external power source.
